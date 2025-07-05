@@ -2,95 +2,88 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 10 10% 5%;
+    --foreground: 210 40% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 10 10% 8%;
+    --card-foreground: 210 40% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 10 10% 8%;
+    --popover-foreground: 210 40% 98%;
 
-    --primary: 213 94% 68%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 280 100% 70%;
+    --primary-foreground: 10 10% 5%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 300 100% 15%;
+    --secondary-foreground: 210 40% 98%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 300 100% 15%;
+    --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 180 100% 50%;
+    --accent-foreground: 10 10% 5%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 300 100% 15%;
+    --input: 300 100% 15%;
+    --ring: 280 100% 70%;
 
     --radius: 0.5rem;
 
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 10 10% 5%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 280 100% 70%;
+    --sidebar-primary-foreground: 10 10% 5%;
+    --sidebar-accent: 300 100% 15%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 300 100% 15%;
+    --sidebar-ring: 280 100% 70%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
+    --background: 10 10% 5%;
     --foreground: 210 40% 98%;
 
-    --card: 222.2 84% 4.9%;
+    --card: 10 10% 8%;
     --card-foreground: 210 40% 98%;
 
-    --popover: 222.2 84% 4.9%;
+    --popover: 10 10% 8%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 280 100% 70%;
+    --primary-foreground: 10 10% 5%;
 
-    --secondary: 217.2 32.6% 17.5%;
+    --secondary: 300 100% 15%;
     --secondary-foreground: 210 40% 98%;
 
-    --muted: 217.2 32.6% 17.5%;
+    --muted: 300 100% 15%;
     --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 180 100% 50%;
+    --accent-foreground: 10 10% 5%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 300 100% 15%;
+    --input: 300 100% 15%;
+    --ring: 280 100% 70%;
+    --sidebar-background: 10 10% 5%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 280 100% 70%;
+    --sidebar-primary-foreground: 10 10% 5%;
+    --sidebar-accent: 300 100% 15%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 300 100% 15%;
+    --sidebar-ring: 280 100% 70%;
   }
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap");
 
 @layer base {
   * {
@@ -99,7 +92,8 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Space Grotesk", sans-serif;
+    background: #0a0a0a;
   }
 
   h1,
@@ -108,36 +102,85 @@
   h4,
   h5,
   h6 {
-    font-family: "Inter", sans-serif;
+    font-family: "JetBrains Mono", monospace;
   }
 }
 
 @layer components {
-  .hero-gradient {
-    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  .neon-text {
+    text-shadow:
+      0 0 5px #ff00ff,
+      0 0 10px #ff00ff,
+      0 0 20px #ff00ff;
   }
 
-  .card-hover {
+  .glitch-effect {
+    animation: glitch 2s infinite;
+  }
+
+  @keyframes glitch {
+    0%,
+    100% {
+      transform: translate(0);
+    }
+    20% {
+      transform: translate(-2px, 2px);
+    }
+    40% {
+      transform: translate(-2px, -2px);
+    }
+    60% {
+      transform: translate(2px, 2px);
+    }
+    80% {
+      transform: translate(2px, -2px);
+    }
+  }
+
+  .cyber-border {
+    border: 2px solid #00ffff;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+  }
+
+  .cyber-hover {
     transition: all 0.3s ease;
   }
 
-  .card-hover:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  .cyber-hover:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(255, 0, 255, 0.5);
   }
 
-  .fade-in {
-    animation: fadeIn 0.6s ease-out;
+  .terminal-text {
+    font-family: "JetBrains Mono", monospace;
+    color: #00ff00;
   }
 
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
+  .floating {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0px);
     }
-    to {
-      opacity: 1;
-      transform: translateY(0);
+    50% {
+      transform: translateY(-10px);
     }
+  }
+
+  .matrix-bg {
+    background-image:
+      radial-gradient(
+        circle at 20% 80%,
+        rgba(255, 0, 255, 0.1) 0%,
+        transparent 50%
+      ),
+      radial-gradient(
+        circle at 80% 20%,
+        rgba(0, 255, 255, 0.1) 0%,
+        transparent 50%
+      );
   }
 }
